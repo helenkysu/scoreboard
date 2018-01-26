@@ -1,0 +1,19 @@
+a:hover{
+    cursor: pointer !important;
+}
+
+.loading-wheel{
+    padding-top: 200px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.blue-text{
+    color: #42dcf4;
+}

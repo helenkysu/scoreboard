@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <!-- react and JSX -->
+    <script crossorigin src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+    <script type="text/babel" src="app.js"></script>
+    
+    <!-- datepicker & jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./scoreboard.css">
+
+    <!-- datepicker -->
+    <script>
+        $( function() {
+        $( "#datepicker" ).datepicker();
+        } );
+    </script>
+
+    </head>
+    <body>
+        <br />
+        <br />
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-1 col-xs-1"></div>
+                <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10 text-center">
+                    Date: 
+                    <input type="text" id="datepicker">
+                    <br />
+                    <br />
+                    See your Favourite Team First!: 
+                    <input type="text" id="fav-input" placeholder="e.g Blue Jays, Rangers etc.">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-1 col-xs-1"></div>
+            </div>
+            <br />
+            <div id="root">
+            </div>
+        </div>
+  </body>
+</html>
